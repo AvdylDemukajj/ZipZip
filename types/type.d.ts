@@ -131,4 +131,8 @@ declare interface DriverStore {
     clearSelectedDriver: () => void;
 }
 
-
+declare interface DriverCardProps {
+    item: MarkerData;
+    selected: number;
+    setSelected: () => void;
+}
