@@ -25,3 +25,11 @@ declare interface MarkerData {
     price?: string;
 }
 
+declare interface MapProps {
+    destinationLatitude?: number;
+    destinationLongitude?: number;
+    onDriverTimesCalculated?: (driversWithTimes: MarkerData[]) => void;
+    selectedDriver?: number | null;
+    onMapReady?: () => void;
+}
+
