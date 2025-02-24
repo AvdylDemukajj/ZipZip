@@ -3,7 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { router } from "expo-router";
 import Swiper from "react-native-swiper";
 import { useRef, useState } from "react";
-import { onbording } from "@/constants";
+import { onboarding } from "@/constants";
 
 const Onbording = () => {
     const swiperRef = useRef<Swiper>(null);
@@ -27,7 +27,7 @@ const Onbording = () => {
                 activeDot={<View className="w-[32px] h-[4px] mx-1 bg-[#0286FF] rounded-full" />}
                 onIndexChanged={(index:any) => setActiveIndex(index)}
             > 
-            {onbording.map((item) => (
+            {onboarding.map((item:any) => (
                 <View key={item.id} className="flex flex-col items-center justify-center p-20">
                     <Text className="text-xl font-JakartaBold">{item.title}</Text>
                     <Text className="text-gray-500 text-md font-JakartaLight">{item.description}</Text>
