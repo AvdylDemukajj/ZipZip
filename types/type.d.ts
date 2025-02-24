@@ -123,4 +123,12 @@ declare interface LocationStore {
         address: string;
     }) => void;
 }
+declare interface DriverStore {
+    drivers: MarkerData[];
+    selectedDriver: number | null;
+    setSelectedDriver: (driverId: number) => void;
+    setDrivers: (drivers: MarkerData[]) => void;
+    clearSelectedDriver: () => void;
+}
+
 
