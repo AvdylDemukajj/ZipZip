@@ -5,7 +5,6 @@ import { icons, images } from "@/constants";
 import { Link } from "expo-router";
 import { useState } from "react";
 import { Image, ScrollView, Text, View } from "react-native"
-import { SafeAreaView } from "react-native-safe-area-context";
 
  const SignUp = () => {
 
@@ -59,7 +58,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
                     <OAuth />
 
                     <Link
-                        href="/sign-in"
+                        href="/sign-up"
                         className="text-lg text-center text-general-200 mt-10"
                     >
                         Already have an account?{" "}
