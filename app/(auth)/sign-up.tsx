@@ -1,3 +1,4 @@
+import { CustomButton } from "@/components/CustomButton";
 import InputField from "@/components/InputField";
 import { icons, images } from "@/constants";
 import { useState } from "react";
@@ -5,6 +6,11 @@ import { Image, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context";
 
  const SignUp = () => {
+
+    const onSignUpPress = () =>{
+        // TODO: Call the API to sign up the user
+        console.log("SignUp pressed", form);
+    }
 
     const [form, setForm] = useState ({
         name: "",
@@ -45,6 +51,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
                         value={form.password}
                         onChangeText={(value) => setForm({ ...form, password: value })}
                     />
+
+                    <CustomButton title="Signu Up" onPress={onSignUpPress} className="mt-6" />
+
+                    {/*     OAuth       */}
+                    
                 </View>
             </View>
         </ScrollView>
