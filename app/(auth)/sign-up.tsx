@@ -1,6 +1,7 @@
 import { CustomButton } from "@/components/CustomButton";
 import InputField from "@/components/InputField";
 import { icons, images } from "@/constants";
+import { Link } from "expo-router";
 import { useState } from "react";
 import { Image, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -55,7 +56,14 @@ import { SafeAreaView } from "react-native-safe-area-context";
                     <CustomButton title="Signu Up" onPress={onSignUpPress} className="mt-6" />
 
                     {/*     OAuth       */}
-                    
+
+                    <Link
+                        href="/sign-in"
+                        className="text-lg text-center text-general-200 mt-10"
+                    >
+                        Already have an account?{" "}
+                        <Text className="text-primary-500">Log In</Text>
+                    </Link>
                 </View>
             </View>
         </ScrollView>
