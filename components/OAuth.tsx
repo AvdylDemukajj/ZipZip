@@ -9,3 +9,5 @@ const OAuth = () => (
         </View>
      </View>
 )
+
+export default OAuth;
