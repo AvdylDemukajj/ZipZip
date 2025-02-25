@@ -36,6 +36,15 @@ import { SafeAreaView } from "react-native-safe-area-context";
                         value={form.email}
                         onChangeText={(value) => setForm({ ...form, email: value })}
                     />
+                    <InputField
+                        label="Password"
+                        placeholder="Enter password"
+                        icon={icons.lock}
+                        secureTextEntry={true}
+                        textContentType="password"
+                        value={form.password}
+                        onChangeText={(value) => setForm({ ...form, password: value })}
+                    />
                 </View>
             </View>
         </ScrollView>
