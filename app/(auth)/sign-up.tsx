@@ -28,6 +28,14 @@ import { SafeAreaView } from "react-native-safe-area-context";
                         value={form.name}
                         onChangeText={(value) => setForm({...form, name: value})}
                     />
+                    <InputField
+                        label="Email"
+                        placeholder="Enter email"
+                        icon={icons.email}
+                        textContentType="emailAddress"
+                        value={form.email}
+                        onChangeText={(value) => setForm({ ...form, email: value })}
+                    />
                 </View>
             </View>
         </ScrollView>
