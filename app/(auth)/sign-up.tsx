@@ -8,7 +8,7 @@ import { Image, ScrollView, Text, View } from "react-native"
 
  const SignUp = () => {
 
-    const onSignUpPress = () =>{
+    const onSignUpPress = async() =>{
         // TODO: Call the API to sign up the user
         console.log("SignUp pressed", form);
     }

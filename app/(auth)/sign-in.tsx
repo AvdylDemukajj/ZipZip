@@ -24,7 +24,7 @@ import { Image, ScrollView, Text, View } from "react-native"
                 <View className="relative w-full h-[250px]">
                     <Image source={images.signUpCar}  className="z-0 w-full h-[250px]"/>
                     <Text className="text-2xl text-black font-JakartaSemiBold absolute bottom-5 left-5">
-                        Create Your Account
+                        Welcome Back 
                     </Text>
                 </View>
                 <View className="p-5">
@@ -46,15 +46,15 @@ import { Image, ScrollView, Text, View } from "react-native"
                         onChangeText={(value) => setForm({ ...form, password: value })}
                     />
 
-                    <CustomButton title="Signu In" onPress={onSignInPress} className="mt-6" />
+                    <CustomButton title="Sign In" onPress={onSignInPress} className="mt-6" />
 
                     <OAuth />
 
                     <Link
-                        href="/sign-in"
+                        href="/sign-up"
                         className="text-lg text-center text-general-200 mt-10"
                     >
-                        Already have an account?{" "}
+                        Don't have an account?{" "}
                         <Text className="text-primary-500">Log In</Text>
                     </Link>
                 </View>
